@@ -8,6 +8,15 @@ Professional WordPress developer specializing in:
 ## 🌐 Live Demo  
 [https://muhammadrehan-dev.netlify.app](https://muhammadrehan-dev.netlify.app)
 
+## 🎯 Skills
+- WordPress Theme Development
+- WooCommerce Integration
+- Responsive Design (Mobile-First)
+
+## 📌 Featured Projects
+- [MiniMe Garment](https://minimegarment.com) - E-commerce store
+- [Jannab](https://jannab.infy.uk) - Custom T-shirt designs
+
 ## 🛠️ Technologies Used  
 - HTML5, CSS3, JavaScript  
 - Bootstrap 5  
