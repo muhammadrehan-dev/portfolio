@@ -1,7 +1,5 @@
 # 🚀 Muhammad Rehan's Portfolio
 
-![Portfolio Screenshot](/screenshot.png) *Add a screenshot later*
-
 Professional WordPress developer specializing in:
 - Custom WordPress Themes
 - WooCommerce Stores
