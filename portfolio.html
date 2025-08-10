@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+<title>Muhammad Rehan | WordPress Developer & WooCommerce Expert</title>
+<meta name="description" content="Professional WordPress developer specializing in custom themes, WooCommerce stores, and high-performance websites. View my portfolio and client success stories.">
+<meta name="keywords" content="WordPress developer, WooCommerce expert, Pakistan, web designer, custom themes, responsive design">
+<meta name="author" content="Muhammad Rehan">
+<meta name="robots" content="index, follow">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://muhammadrehan-dev.netlify.app" />
+
+<!-- Facebook/LinkedIn -->
+<meta property="og:title" content="Muhammad Rehan | WordPress Developer Portfolio">
+<meta property="og:description" content="3+ years experience building WordPress sites and eCommerce solutions. Check my work!">
+<meta property="og:url" content="https://muhammadrehan-dev.netlify.app">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://muhammadrehan-dev.netlify.app/images/social-preview.jpg"> <!-- Use 1200x630px image -->
+<meta property="og:site_name" content="Muhammad Rehan Portfolio">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@m_rehan78633"> <!-- Replace with your Twitter -->
+<meta name="twitter:title" content="Muhammad Rehan | WordPress Developer">
+<meta name="twitter:description" content="Custom WordPress solutions for businesses. See my portfolio and client reviews.">
+<meta name="twitter:image" content="https://muhammadrehan-dev.netlify.app/images/social-preview.jpg">
+
+<!-- Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<!-- Theme Color (Mobile) -->
+<meta name="theme-color" content="#FF4D6D">
+
+
+<!-- Schema.org Markup (Rich Snippets) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Muhammad Rehan",
+  "jobTitle": "WordPress Developer",
+  "url": "https://muhammadrehan-dev.netlify.app",
+  "sameAs": [
+    "https://linkedin.com/in/muhammadrehanwordpress",
+    "https://instagram.com/its.rehan.riaz"
+  ],
+  "skills": ["WordPress", "WooCommerce", "PHP", "Elementor", "CSS"]
+}
+</script>
+
+<!-- Search Engine Verification -->
+<meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_KEY">
+<meta name="msvalidate.01" content="YOUR_BING_WEBMASTER_KEY">
+
+
+
+    <!-- Bootstrap & FontAwesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
+    <style>
+      /* Modern Global Styles */
+      :root {
+        --primary: #ff4d6d;
+        --secondary: #00bcd4;
+        --dark: #1a1a2e;
+        --light: #f9f9f9;
+      }
+      
+      body {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+        background-color: var(--light);
+        color: #333;
+      }
+
+      /* Modern Navbar */
+      nav.navbar {
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        transition: background 0.3s;
+      }
+      .navbar-brand {
+        font-weight: 700;
+        color: var(--dark) !important;
+      }
+      .nav-link {
+        font-weight: 500;
+        position: relative;
+      }
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background: var(--primary);
+        transition: width 0.3s;
+      }
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      /* Modern Hero with Profile Image */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        padding: 80px 0;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-content {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+      }
+      .profile-img {
+        width: 350px;
+        height: 350px;
+        border-radius: 20px;
+        object-fit: cover;
+        border: 5px solid white;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      .hero h1 {
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+      }
+      .hero h4 {
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 30px;
+      }
+      .hero-btns .btn {
+        padding: 12px 25px;
+        font-weight: 600;
+        border-radius: 10px;
+        margin-right: 15px;
+      }
+      .btn-primary {
+        background: var(--primary);
+        border: none;
+      }
+      .btn-outline-primary {
+        border-color: var(--primary);
+        color: var(--primary);
+      }
+      .btn-outline-primary:hover {
+        background: var(--primary);
+        color: white;
+      }
+
+      /* Gradient Section Titles */
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        background: linear-gradient(90deg, #f05a5a, #f0932b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 40px;
+        position: relative;
+        display: inline-block;
+      }
+      .section-title::after {
+        content: '';
+        position: absolute;
+        width: 60%;
+        height: 4px;
+        bottom: -10px;
+        left: 0;
+        background: linear-gradient(90deg, #f05a5a, #f0932b);
+        border-radius: 2px;
+      }
+
+      section {
+        padding: 100px 0;
+      }
+
+      /* About Section */
+      #about {
+        background: white;
+      }
+      .about-img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      .about-content {
+        padding-left: 40px;
+      }
+      .about-content p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 25px;
+      }
+      .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .skill-badge {
+        background: rgba(0, 188, 212, 0.1);
+        color: var(--secondary);
+        padding: 8px 15px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+
+      /* Portfolio Section */
+      #portfolio {
+        background: #f8f9fa;
+      }
+      .portfolio-item {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+      .portfolio-item:hover {
+        transform: translateY(-10px);
+      }
+      .portfolio-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+      .portfolio-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 20px;
+        transform: translateY(100%);
+        transition: transform 0.3s;
+      }
+      .portfolio-item:hover .portfolio-overlay {
+        transform: translateY(0);
+      }
+
+      /* Testimonial Cards */
+      .testimonial-card {
+        background: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s, box-shadow 0.3s;
+        height: 100%;
+      }
+      .testimonial-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+      .testimonial-name {
+        font-weight: 600;
+        margin-top: 20px;
+        color: var(--primary);
+      }
+
+      /* Modern Contact Section */
+      #contact {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        padding: 80px;
+        margin: 50px auto;
+      }
+      .contact-info {
+        margin-bottom: 40px;
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .contact-icon {
+        width: 50px;
+        height: 50px;
+        background: rgba(0, 188, 212, 0.1);
+        color: var(--secondary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin-right: 15px;
+      }
+      .contact-text {
+        font-size: 1.1rem;
+      }
+      .contact-text a {
+        color: var(--secondary);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .contact-text a:hover {
+        color: #008c9e;
+      }
+
+      /* WhatsApp Floating Button - 100% Fixed */
+      .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background: #25D366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        text-decoration: none !important;
+      }
+      .whatsapp-icon {
+        color: white;
+        font-size: 30px;
+        text-decoration: none !important;
+      }
+
+      /* Social Sidebar - Hidden on Mobile */
+      .social-sidebar {
+        position: fixed;
+        top: 50%;
+        left: 30px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 1000;
+      }
+      .social-sidebar a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(135deg, #f05a5a, #f0932b);
+        color: white;
+        border-radius: 50%;
+        font-size: 20px;
+        text-decoration: none;
+        transition: all 0.3s;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      .social-sidebar a:hover {
+        transform: translateX(5px);
+        background: linear-gradient(135deg, #d94b4b, #e67e22);
+      }
+
+      /* Footer */
+      footer {
+        background: var(--dark);
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+      }
+      .footer-text {
+        margin-bottom: 0;
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 992px) {
+        .hero-content {
+          flex-direction: column;
+          text-align: center;
+        }
+        .profile-img {
+          width: 250px;
+          height: 250px;
+          margin-bottom: 30px;
+        }
+        .about-content {
+          padding-left: 0;
+          margin-top: 30px;
+        }
+        .section-title {
+          font-size: 2rem;
+        }
+        .social-sidebar {
+          display: none !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+        .hero h4 {
+          font-size: 1rem;
+        }
+        #contact {
+          padding: 40px;
+        }
+        .whatsapp-float {
+          bottom: 20px;
+          right: 20px;
+          width: 50px;
+          height: 50px;
+        }
+        .whatsapp-icon {
+          font-size: 24px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .hero-btns .btn {
+          display: block;
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        .portfolio-overlay {
+          padding: 15px;
+        }
+      }
+
+      /* Portfolio Iframe Fixes */
+      .portfolio-iframe-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        border-radius: 15px;
+      }
+      .portfolio-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- WhatsApp Button - 100% Fixed -->
+    <a href="https://wa.me/923229680603" target="_blank" class="whatsapp-float">
+      <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <!-- Social Sidebar - Hidden on Mobile -->
+    <div class="social-sidebar d-none d-lg-flex">
+      <a href="https://instagram.com/its.rehan.riaz" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com/in/muhammadrehanwordpress" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:muhammadrehan78633@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Muhammad Rehan</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Profile Image -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content" data-aos="fade-up">
+          <img src="profile.jpg" alt="Muhammad Rehan" class="profile-img" data-aos="fade-right">
+          <div data-aos="fade-left">
+            <h1>I'm <span style="color: var(--primary)">Muhammad Rehan</span></h1>
+            <h4>Professional WordPress Developer & Designer</h4>
+            <div class="hero-btns">
+              <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+              <a href="#contact" class="btn btn-outline-primary">Hire Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">About Me</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="profile.jpg" alt="About Muhammad Rehan" class="about-img">
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="about-content">
+              <p>
+                I am Muhammad Rehan, a passionate WordPress Developer and Designer 
+                with 3+ years of experience creating stunning, responsive websites. 
+                I specialize in custom WordPress themes, WooCommerce solutions, and 
+                high-performance designs.
+              </p>
+              <p>
+                My approach combines technical expertise with creative design to 
+                deliver websites that not only look great but also drive results 
+                for my clients.
+              </p>
+              <div class="skills-list">
+                <span class="skill-badge">WordPress</span>
+                <span class="skill-badge">Elementor</span>
+                <span class="skill-badge">WooCommerce</span>
+                <span class="skill-badge">HTML/CSS</span>
+                <span class="skill-badge">SEO</span>
+                <span class="skill-badge">UI/UX Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="bg-light">
+  <div class="container">
+    <h2 class="section-title text-center" data-aos="fade-up">My Portfolio</h2>
+    <div class="row g-4">
+      <!-- MiniMe Garment -->
+      <div class="col-md-6" data-aos="fade-up">
+        <div class="portfolio-item">
+          <div class="portfolio-img-container">
+            <img src="minimegarment.png" alt="MiniMe Garment E-commerce Store" class="img-fluid rounded-3">
+            <div class="portfolio-overlay">
+              <a href="https://minimegarment.com" target="_blank" class="btn btn-primary btn-lg">
+                View Live Site <i class="fas fa-external-link-alt ms-2"></i>
+              </a>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <h4 class="fw-bold">MiniMe Garment</h4>
+            <p class="text-muted">Premium Children's Clothing E-commerce Store</p>
+            <div class="d-flex justify-content-center gap-2 mt-3">
+              <a href="https://minimegarment.com" target="_blank" class="btn btn-sm btn-primary">
+                Visit Site
+              </a>
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#minimeModal">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Jannab -->
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="portfolio-item">
+          <div class="portfolio-img-container">
+            <img src="jannab.png" alt="Jannab Custom T-Shirts" class="img-fluid rounded-3">
+            <div class="portfolio-overlay">
+              <a href="https://jannab.infy.uk" target="_blank" class="btn btn-primary btn-lg">
+                View Live Site <i class="fas fa-external-link-alt ms-2"></i>
+              </a>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <h4 class="fw-bold">Jannab</h4>
+            <p class="text-muted">Custom T-Shirt Design Platform</p>
+            <div class="d-flex justify-content-center gap-2 mt-3">
+              <a href="https://jannab.infy.uk" target="_blank" class="btn btn-sm btn-primary">
+                Visit Site
+              </a>
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#jannabModal">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Reviews Section -->
+    <section id="reviews">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">Client Testimonials</h2>
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-card">
+              <p>
+                "Rehan bhai ka kaam bohot acha hai. Website bohot professional
+                aur fast bani hai. Highly recommended!"
+              </p>
+              <div class="testimonial-name">— Ali Khan, Karachi</div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-card">
+              <p>
+                "Mujhe apni clothing brand ki website chahiye thi, Rehan ne
+                kamal ka design banaya. Sales bhi improve hui."
+              </p>
+              <div class="testimonial-name">— Anonymous, Minime Garment </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-card">
+              <p>
+                "Best WordPress developer! On time delivery, clean design, and
+                very supportive."
+              </p>
+              <div class="testimonial-name">— Umair, Jannab</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <a href="mailto:muhammadrehan78633@gmail.com">muhammadrehan78633@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="contact-text">
+                  <a href="https://wa.me/923229680603">+92 322 9680603</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+                <div class="contact-text">
+                  <a href="https://instagram.com/its.rehan.riaz" target="_blank">@its.rehan.riaz</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="contact-text">
+                  <a href="https://linkedin.com/in/muhammadrehanwordpress" target="_blank">muhammadrehanwordpress</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <form class="contact-form">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+      <div class="container">
+        <p class="footer-text">&copy; 2025 Muhammad Rehan. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
