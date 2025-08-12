@@ -911,8 +911,25 @@
       window.addEventListener("resize", adjustViewport);
       adjustViewport();
     </script>
+<script>
+      // Initialize AOS (unchanged)
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+
+      // Netlify Form Success Handler (updated)
+      if (window.location.search.includes('form-submitted=true')) {
+        document.getElementById('form-success').classList.remove('d-none');
+        setTimeout(() => {
+          history.replaceState({}, '', window.location.pathname);
+        }, 3000);
+      }
+    </script>
+    
   </body>
 </html>
+
 
 
 
