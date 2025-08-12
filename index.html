@@ -802,47 +802,42 @@
           </div>
           <div class="col-lg-6" data-aos="fade-left">
             <!-- Only changed these 3 lines (added netlify, hidden fields) -->
-            <form
-              id="contactForm"
-              class="contact-form"
-              name="contact"
-              method="POST"
+            <form 
+              name="portfolio-contact" 
+              method="POST" 
               netlify
               netlify-honeypot="bot-field"
+              class="contact-form"
             >
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="form-name" value="portfolio-contact">
               <p class="d-none">
-                <label>Don't fill this out: <input name="bot-field" /></label>
+                <label>Don't fill this out: <input name="bot-field"></label>
               </p>
-
-              <!-- ALL ORIGINAL FIELDS REMAIN EXACTLY THE SAME -->
+              
               <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Your Name"
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  name="name" 
+                  placeholder="Your Name" 
                   required
-                />
+                >
               </div>
               <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="Your Email"
+                <input 
+                  type="email" 
+                  class="form-control" 
+                  name="email" 
+                  placeholder="Your Email" 
                   required
-                />
+                >
               </div>
               <div class="mb-3">
-                <textarea
-                  class="form-control"
-                  id="message"
-                  name="message"
-                  rows="5"
-                  placeholder="Your Message"
+                <textarea 
+                  class="form-control" 
+                  name="message" 
+                  rows="5" 
+                  placeholder="Your Message" 
                   required
                 ></textarea>
               </div>
@@ -918,5 +913,6 @@
     </script>
   </body>
 </html>
+
 
 
