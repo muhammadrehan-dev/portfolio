@@ -422,6 +422,29 @@
         margin-bottom: 0;
       }
 
+         .icon-box {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bg-primary-soft {
+    background-color: rgba(255, 77, 109, 0.1);
+  }
+  .bg-success-soft {
+    background-color: rgba(0, 188, 212, 0.1);
+  }
+  .bg-warning-soft {
+    background-color: rgba(255, 193, 7, 0.1);
+  }
+  .card {
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
       /* Responsive Adjustments */
       @media (max-width: 992px) {
         .hero-content {
@@ -789,80 +812,109 @@
       </div>
     </div>
 
-    <!-- Add-Ons Section -->
-    <div class="row" data-aos="fade-up">
-      <div class="col-12">
-        <div class="card border-0 shadow-sm">
-          <div class="card-header bg-white">
-            <h4 class="text-center text-primary mb-0">Custom Add-Ons</h4>
-          </div>
-          <div class="card-body">
-            <div class="row">
-              <!-- Website Add-Ons -->
-              <div class="col-md-4">
-                <h5 class="mb-3"><i class="fas fa-laptop-code text-primary me-2"></i> Website Enhancements</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent border-0 px-0">
-                    <span>Additional Page</span>
-                    <span class="badge bg-primary rounded-pill">Rs. 2,000/page</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent border-0 px-0">
-                    <span>Premium Theme Setup</span>
-                    <span class="badge bg-primary rounded-pill">Rs. 5,000</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent border-0 px-0">
-                    <span>Multilingual Site</span>
-                    <span class="badge bg-primary rounded-pill">Rs. 8,000</span>
-                  </li>
-                </ul>
+   <div class="row mt-5" data-aos="fade-up">
+  <div class="col-12">
+    <div class="card border-0 shadow-sm overflow-hidden">
+      <div class="card-header bg-white py-4">
+        <h4 class="text-center text-primary mb-0">
+          <i class="fas fa-plus-circle me-2"></i> Custom Add-On Services
+        </h4>
+      </div>
+      <div class="card-body p-0">
+        <div class="row g-0">
+          <!-- Website Add-Ons -->
+          <div class="col-lg-4 p-4 border-end">
+            <div class="d-flex align-items-center mb-4">
+              <div class="icon-box bg-primary text-white rounded-circle me-3">
+                <i class="fas fa-laptop-code"></i>
               </div>
-              
-              <!-- SEO Add-Ons -->
-              <div class="col-md-4">
-                <h5 class="mb-3"><i class="fas fa-search text-primary me-2"></i> SEO Services</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent border-0 px-0">
-                    <span>Local SEO Setup</span>
-                    <span class="badge bg-primary rounded-pill">Rs. 10,000</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent border-0 px-0">
-                    <span>Technical SEO Audit</span>
-                    <span class="badge bg-primary rounded-pill">Rs. 15,000</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent border-0 px-0">
-                    <span>Ongoing SEO (Monthly)</span>
-                    <span class="badge bg-primary rounded-pill">Rs. 20,000/mo</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <!-- Marketing Add-Ons -->
-              <div class="col-md-4">
-                <h5 class="mb-3"><i class="fas fa-bullhorn text-primary me-2"></i> Advertising</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent border-0 px-0">
-                    <span>Google Ads Management</span>
-                    <span class="badge bg-primary rounded-pill">Rs. 15,000/mo</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent border-0 px-0">
-                    <span>Video Ads Creation</span>
-                    <span class="badge bg-primary rounded-pill">Rs. 8,000/video</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent border-0 px-0">
-                    <span>Influencer Campaign</span>
-                    <span class="badge bg-primary rounded-pill">Rs. 25,000</span>
-                  </li>
-                </ul>
-              </div>
+              <h5 class="mb-0">Website Enhancements</h5>
             </div>
+            <ul class="list-unstyled">
+              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                <span>Additional Page</span>
+                <span class="badge bg-primary-soft text-primary">Rs. 2,000/page</span>
+              </li>
+              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                <span>Premium Theme Setup</span>
+                <span class="badge bg-primary-soft text-primary">Rs. 5,000</span>
+              </li>
+              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                <span>Multilingual Site</span>
+                <span class="badge bg-primary-soft text-primary">Rs. 8,000</span>
+              </li>
+              <li class="d-flex justify-content-between align-items-center py-2">
+                <span>Custom Plugin Development</span>
+                <span class="badge bg-primary-soft text-primary">Rs. 15,000</span>
+              </li>
+            </ul>
           </div>
-          <div class="card-footer bg-white border-0 text-center">
-            <p class="mb-0">Mix and match services for a custom package! <a href="#contact" class="text-primary">Contact me</a> for bulk discounts.</p>
+          
+          <!-- SEO Add-Ons -->
+          <div class="col-lg-4 p-4 border-end">
+            <div class="d-flex align-items-center mb-4">
+              <div class="icon-box bg-success text-white rounded-circle me-3">
+                <i class="fas fa-search"></i>
+              </div>
+              <h5 class="mb-0">SEO Services</h5>
+            </div>
+            <ul class="list-unstyled">
+              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                <span>Local SEO Setup</span>
+                <span class="badge bg-success-soft text-success">Rs. 10,000</span>
+              </li>
+              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                <span>Technical SEO Audit</span>
+                <span class="badge bg-success-soft text-success">Rs. 15,000</span>
+              </li>
+              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                <span>Ongoing SEO (Monthly)</span>
+                <span class="badge bg-success-soft text-success">Rs. 20,000/mo</span>
+              </li>
+              <li class="d-flex justify-content-between align-items-center py-2">
+                <span>Competitor Analysis</span>
+                <span class="badge bg-success-soft text-success">Rs. 12,000</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Marketing Add-Ons -->
+          <div class="col-lg-4 p-4">
+            <div class="d-flex align-items-center mb-4">
+              <div class="icon-box bg-warning text-white rounded-circle me-3">
+                <i class="fas fa-bullhorn"></i>
+              </div>
+              <h5 class="mb-0">Advertising</h5>
+            </div>
+            <ul class="list-unstyled">
+              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                <span>Google Ads Management</span>
+                <span class="badge bg-warning-soft text-warning">Rs. 15,000/mo</span>
+              </li>
+              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                <span>Video Ads Creation</span>
+                <span class="badge bg-warning-soft text-warning">Rs. 8,000/video</span>
+              </li>
+              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                <span>Influencer Campaign</span>
+                <span class="badge bg-warning-soft text-warning">Rs. 25,000</span>
+              </li>
+              <li class="d-flex justify-content-between align-items-center py-2">
+                <span>Social Media Management</span>
+                <span class="badge bg-warning-soft text-warning">Rs. 18,000/mo</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      <div class="card-footer bg-light border-0 text-center py-4">
+        <a href="#contact" class="btn btn-primary px-4">
+          <i class="fas fa-tasks me-2"></i> Build Custom Package
+        </a>
+      </div>
     </div>
-
+  </div>
+</div>
     <!-- Money-Back Guarantee -->
     <div class="text-center mt-5 pt-3" data-aos="fade-up">
       <div class="d-inline-block p-3 bg-white rounded shadow-sm">
@@ -1090,6 +1142,7 @@
     
   </body>
 </html>
+
 
 
 
