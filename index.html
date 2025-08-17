@@ -535,49 +535,35 @@
         <i class="fas fa-envelope"></i>
       </a>
     </div>
-    <!-- Navbar -->
+
+    <!-- Fixed Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
-        <!-- In <body> (e.g., inside <header> or navbar) -->
-        <img
-          src="logo.png"
-          alt="Muhammad Rehan - WordPress Developer"
-          width="75"
-          height="auto"
-        />
-        <a class="navbar-brand" href="#">Muhammad Rehan</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="logo.png" alt="Muhammad Rehan - WordPress Developer" width="40" height="auto" class="me-2">
+          Muhammad Rehan
+        </a>
+        <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#reviews">Reviews</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Hero Section with Profile Image -->
+    <!-- All your existing sections (Hero, About, Portfolio, etc.) remain exactly the same -->
     <section id="home" class="hero">
       <div class="container">
         <div class="hero-content" data-aos="fade-up">
@@ -735,196 +721,197 @@
         </div>
       </div>
     </section>
-<!-- Pricing Section -->
-<section id="pricing" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="section-title text-center mb-5" data-aos="fade-up">Flexible Pricing Plans</h2>
-    
-    <!-- Core Packages -->
-    <div class="row g-4 mb-5">
-      <!-- WordPress Starter -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-header bg-white py-4">
-            <h4 class="text-center text-primary">Website Starter</h4>
-            <h2 class="text-center">Rs. 15,000</h2>
-            <small class="d-block text-center text-muted">One-time fee</small>
-          </div>
-          <div class="card-body">
-            <ul class="list-unstyled">
-              <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 5-Page WordPress Site</li>
-              <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Elementor Design</li>
-              <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Mobile Responsive</li>
-              <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Basic SEO Setup</li>
-              <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 1 Month Support</li>
-            </ul>
-          </div>
-          <div class="card-footer bg-white border-0">
-            <a href="#contact" class="btn btn-outline-primary w-100">Get Started</a>
-          </div>
-        </div>
-      </div>
 
-      <!-- E-Commerce Package -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="card h-100 border-0 shadow-lg">
-          <div class="card-header bg-primary text-white py-4">
-            <h4 class="text-center">E-Commerce Pro</h4>
-            <h2 class="text-center">Rs. 35,000</h2>
-            <small class="d-block text-center text-white-50">+ Rs. 500/product</small>
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-5" data-aos="fade-up">Flexible Pricing Plans</h2>
+        
+        <!-- Core Packages -->
+        <div class="row g-4 mb-5">
+          <!-- WordPress Starter -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-header bg-white py-4">
+                <h4 class="text-center text-primary">Website Starter</h4>
+                <h2 class="text-center">Rs. 15,000</h2>
+                <small class="d-block text-center text-muted">One-time fee</small>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 5-Page WordPress Site</li>
+                  <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Elementor Design</li>
+                  <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Mobile Responsive</li>
+                  <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Basic SEO Setup</li>
+                  <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 1 Month Support</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <a href="#contact" class="btn btn-outline-primary w-100">Get Started</a>
+              </div>
+            </div>
           </div>
-          <div class="card-body">
-            <ul class="list-unstyled">
-              <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> WooCommerce Store (20 Products)</li>
-              <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Payment Gateway Setup</li>
-              <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Product Upload Assistance</li>
-              <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Inventory Management</li>
-              <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 3 Months Support</li>
-            </ul>
-          </div>
-          <div class="card-footer bg-white border-0">
-            <a href="#contact" class="btn btn-primary w-100">Start Selling</a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Digital Marketing -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="card-header bg-white py-4">
-            <h4 class="text-center text-primary">Marketing Suite</h4>
-            <h2 class="text-center">Rs. 25,000/mo</h2>
-            <small class="d-block text-center text-muted">Minimum 3 months</small>
+          <!-- E-Commerce Package -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 border-0 shadow-lg">
+              <div class="card-header bg-primary text-white py-4">
+                <h4 class="text-center">E-Commerce Pro</h4>
+                <h2 class="text-center">Rs. 35,000</h2>
+                <small class="d-block text-center text-white-50">+ Rs. 500/product</small>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> WooCommerce Store (20 Products)</li>
+                  <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Payment Gateway Setup</li>
+                  <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Product Upload Assistance</li>
+                  <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Inventory Management</li>
+                  <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> 3 Months Support</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <a href="#contact" class="btn btn-primary w-100">Start Selling</a>
+              </div>
+            </div>
           </div>
-          <div class="card-body">
-            <ul class="list-unstyled">
-              <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Social Media Management (2 platforms)</li>
-              <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Meta Ads (Rs. 10,000 ad budget included)</li>
-              <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Monthly Performance Reports</li>
-              <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Content Creation (8 posts/month)</li>
-              <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Community Engagement</li>
-            </ul>
-          </div>
-          <div class="card-footer bg-white border-0">
-            <a href="#contact" class="btn btn-outline-primary w-100">Boost Growth</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-   <div class="row mt-5" data-aos="fade-up">
-  <div class="col-12">
-    <div class="card border-0 shadow-sm overflow-hidden">
-      <div class="card-header bg-white py-4">
-        <h4 class="text-center text-primary mb-0">
-          <i class="fas fa-plus-circle me-2"></i> Custom Add-On Services
-        </h4>
-      </div>
-      <div class="card-body p-0">
-        <div class="row g-0">
-          <!-- Website Add-Ons -->
-          <div class="col-lg-4 p-4 border-end">
-            <div class="d-flex align-items-center mb-4">
-              <div class="icon-box bg-primary text-white rounded-circle me-3">
-                <i class="fas fa-laptop-code"></i>
+          <!-- Digital Marketing -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-header bg-white py-4">
+                <h4 class="text-center text-primary">Marketing Suite</h4>
+                <h2 class="text-center">Rs. 25,000/mo</h2>
+                <small class="d-block text-center text-muted">Minimum 3 months</small>
               </div>
-              <h5 class="mb-0">Website Enhancements</h5>
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Social Media Management (2 platforms)</li>
+                  <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Meta Ads (Rs. 10,000 ad budget included)</li>
+                  <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Monthly Performance Reports</li>
+                  <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Content Creation (8 posts/month)</li>
+                  <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Community Engagement</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-white border-0">
+                <a href="#contact" class="btn btn-outline-primary w-100">Boost Growth</a>
+              </div>
             </div>
-            <ul class="list-unstyled">
-              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                <span>Additional Page</span>
-                <span class="badge bg-primary-soft text-primary">Rs. 2,000/page</span>
-              </li>
-              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                <span>Premium Theme Setup</span>
-                <span class="badge bg-primary-soft text-primary">Rs. 5,000</span>
-              </li>
-              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                <span>Multilingual Site</span>
-                <span class="badge bg-primary-soft text-primary">Rs. 8,000</span>
-              </li>
-              <li class="d-flex justify-content-between align-items-center py-2">
-                <span>Custom Plugin Development</span>
-                <span class="badge bg-primary-soft text-primary">Rs. 15,000</span>
-              </li>
-            </ul>
           </div>
-          
-          <!-- SEO Add-Ons -->
-          <div class="col-lg-4 p-4 border-end">
-            <div class="d-flex align-items-center mb-4">
-              <div class="icon-box bg-success text-white rounded-circle me-3">
-                <i class="fas fa-search"></i>
+        </div>
+
+        <div class="row mt-5" data-aos="fade-up">
+          <div class="col-12">
+            <div class="card border-0 shadow-sm overflow-hidden">
+              <div class="card-header bg-white py-4">
+                <h4 class="text-center text-primary mb-0">
+                  <i class="fas fa-plus-circle me-2"></i> Custom Add-On Services
+                </h4>
               </div>
-              <h5 class="mb-0">SEO Services</h5>
+              <div class="card-body p-0">
+                <div class="row g-0">
+                  <!-- Website Add-Ons -->
+                  <div class="col-lg-4 p-4 border-end">
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="icon-box bg-primary text-white rounded-circle me-3">
+                        <i class="fas fa-laptop-code"></i>
+                      </div>
+                      <h5 class="mb-0">Website Enhancements</h5>
+                    </div>
+                    <ul class="list-unstyled">
+                      <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Additional Page</span>
+                        <span class="badge bg-primary-soft text-primary">Rs. 2,000/page</span>
+                      </li>
+                      <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Premium Theme Setup</span>
+                        <span class="badge bg-primary-soft text-primary">Rs. 5,000</span>
+                      </li>
+                      <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Multilingual Site</span>
+                        <span class="badge bg-primary-soft text-primary">Rs. 8,000</span>
+                      </li>
+                      <li class="d-flex justify-content-between align-items-center py-2">
+                        <span>Custom Plugin Development</span>
+                        <span class="badge bg-primary-soft text-primary">Rs. 15,000</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <!-- SEO Add-Ons -->
+                  <div class="col-lg-4 p-4 border-end">
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="icon-box bg-success text-white rounded-circle me-3">
+                        <i class="fas fa-search"></i>
+                      </div>
+                      <h5 class="mb-0">SEO Services</h5>
+                    </div>
+                    <ul class="list-unstyled">
+                      <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Local SEO Setup</span>
+                        <span class="badge bg-success-soft text-success">Rs. 10,000</span>
+                      </li>
+                      <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Technical SEO Audit</span>
+                        <span class="badge bg-success-soft text-success">Rs. 15,000</span>
+                      </li>
+                      <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Ongoing SEO (Monthly)</span>
+                        <span class="badge bg-success-soft text-success">Rs. 20,000/mo</span>
+                      </li>
+                      <li class="d-flex justify-content-between align-items-center py-2">
+                        <span>Competitor Analysis</span>
+                        <span class="badge bg-success-soft text-success">Rs. 12,000</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <!-- Marketing Add-Ons -->
+                  <div class="col-lg-4 p-4">
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="icon-box bg-warning text-white rounded-circle me-3">
+                        <i class="fas fa-bullhorn"></i>
+                      </div>
+                      <h5 class="mb-0">Advertising</h5>
+                    </div>
+                    <ul class="list-unstyled">
+                      <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Google Ads Management</span>
+                        <span class="badge bg-warning-soft text-warning">Rs. 15,000/mo</span>
+                      </li>
+                      <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Video Ads Creation</span>
+                        <span class="badge bg-warning-soft text-warning">Rs. 8,000/video</span>
+                      </li>
+                      <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Influencer Campaign</span>
+                        <span class="badge bg-warning-soft text-warning">Rs. 25,000</span>
+                      </li>
+                      <li class="d-flex justify-content-between align-items-center py-2">
+                        <span>Social Media Management</span>
+                        <span class="badge bg-warning-soft text-warning">Rs. 18,000/mo</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer bg-light border-0 text-center py-4">
+                <a href="#contact" class="btn btn-primary px-4">
+                  <i class="fas fa-tasks me-2"></i> Build Custom Package
+                </a>
+              </div>
             </div>
-            <ul class="list-unstyled">
-              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                <span>Local SEO Setup</span>
-                <span class="badge bg-success-soft text-success">Rs. 10,000</span>
-              </li>
-              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                <span>Technical SEO Audit</span>
-                <span class="badge bg-success-soft text-success">Rs. 15,000</span>
-              </li>
-              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                <span>Ongoing SEO (Monthly)</span>
-                <span class="badge bg-success-soft text-success">Rs. 20,000/mo</span>
-              </li>
-              <li class="d-flex justify-content-between align-items-center py-2">
-                <span>Competitor Analysis</span>
-                <span class="badge bg-success-soft text-success">Rs. 12,000</span>
-              </li>
-            </ul>
           </div>
-          
-          <!-- Marketing Add-Ons -->
-          <div class="col-lg-4 p-4">
-            <div class="d-flex align-items-center mb-4">
-              <div class="icon-box bg-warning text-white rounded-circle me-3">
-                <i class="fas fa-bullhorn"></i>
-              </div>
-              <h5 class="mb-0">Advertising</h5>
-            </div>
-            <ul class="list-unstyled">
-              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                <span>Google Ads Management</span>
-                <span class="badge bg-warning-soft text-warning">Rs. 15,000/mo</span>
-              </li>
-              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                <span>Video Ads Creation</span>
-                <span class="badge bg-warning-soft text-warning">Rs. 8,000/video</span>
-              </li>
-              <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                <span>Influencer Campaign</span>
-                <span class="badge bg-warning-soft text-warning">Rs. 25,000</span>
-              </li>
-              <li class="d-flex justify-content-between align-items-center py-2">
-                <span>Social Media Management</span>
-                <span class="badge bg-warning-soft text-warning">Rs. 18,000/mo</span>
-              </li>
-            </ul>
+        </div>
+        <!-- Money-Back Guarantee -->
+        <div class="text-center mt-5 pt-3" data-aos="fade-up">
+          <div class="d-inline-block p-3 bg-white rounded shadow-sm">
+            <i class="fas fa-shield-alt fa-2x text-primary mb-3"></i>
+            <h5 class="mb-1">14-Day Satisfaction Guarantee</h5>
+            <p class="small text-muted mb-0">If you're not happy with initial results, I'll refund 100%</p>
           </div>
         </div>
       </div>
-      <div class="card-footer bg-light border-0 text-center py-4">
-        <a href="#contact" class="btn btn-primary px-4">
-          <i class="fas fa-tasks me-2"></i> Build Custom Package
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-    <!-- Money-Back Guarantee -->
-    <div class="text-center mt-5 pt-3" data-aos="fade-up">
-      <div class="d-inline-block p-3 bg-white rounded shadow-sm">
-        <i class="fas fa-shield-alt fa-2x text-primary mb-3"></i>
-        <h5 class="mb-1">14-Day Satisfaction Guarantee</h5>
-        <p class="small text-muted mb-0">If you're not happy with initial results, I'll refund 100%</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
     
     <!-- Reviews Section -->
     <section id="reviews">
@@ -1014,7 +1001,6 @@
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left">
-            <!-- Only changed these 3 lines (added netlify, hidden fields) -->
             <form 
               name="portfolio-contact" 
               method="POST" 
@@ -1075,83 +1061,30 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 800,
-        once: true,
-      });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
     <script>
       // Initialize AOS animations
       AOS.init({
         duration: 800,
-        once: true,
+        once: true
       });
 
-      // Contact form handling
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          // Get form values
-          const name = document.getElementById("name").value;
-          const email = document.getElementById("email").value;
-          const message = document.getElementById("message").value;
-
-          // Here you would typically send the data to a server
-          // For demo purposes, we'll just show a success message
-          console.log("Form submitted:", { name, email, message });
-
-          // Show success message
-          document.getElementById("formSuccess").classList.remove("d-none");
-          document.getElementById("contactForm").reset();
-
-          // Hide success message after 5 seconds
-          setTimeout(() => {
-            document.getElementById("formSuccess").classList.add("d-none");
-          }, 5000);
+      // Navbar close on mobile when clicking links
+      document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        
+        navLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            if (window.innerWidth < 992) { // Only for mobile
+              const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+              });
+              bsCollapse.hide();
+            }
+          });
         });
-
-      // Ensure full viewport width
-      function adjustViewport() {
-        document.documentElement.style.width = "100vw";
-        document.documentElement.style.overflowX = "hidden";
-      }
-      window.addEventListener("resize", adjustViewport);
-      adjustViewport();
-    </script>
-<script>
-      // Initialize AOS (unchanged)
-      AOS.init({
-        duration: 800,
-        once: true,
       });
-
-      // Netlify Form Success Handler (updated)
-      if (window.location.search.includes('form-submitted=true')) {
-        document.getElementById('form-success').classList.remove('d-none');
-        setTimeout(() => {
-          history.replaceState({}, '', window.location.pathname);
-        }, 3000);
-      }
     </script>
-    <!-- Bootstrap JS (with Popper included) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
