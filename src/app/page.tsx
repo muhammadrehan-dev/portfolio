@@ -1,3 +1,4 @@
+import { preload } from "react-dom";
 import { PresentationProvider } from "@/components/PresentationProvider";
 import { ProgressIndicator } from "@/components/ProgressIndicator";
 import { Navbar } from "@/components/Navbar";
@@ -9,7 +10,22 @@ import { ProjectsPanel } from "@/components/panels/ProjectsPanel";
 import { SecurityPanel } from "@/components/panels/SecurityPanel";
 import { ContactPanel } from "@/components/panels/ContactPanel";
 
+const backgroundImages = [
+  "/media/hero-bg.jpg",
+  "/media/about-bg.jpg",
+  "/media/education-bg.jpg",
+  "/media/skills-bg.jpg",
+  "/media/projects-bg.jpg",
+  "/media/security-bg.jpg",
+  "/media/contact-bg.jpg"
+];
+
 export default function Home() {
+  // Preload all background images to prevent lag/flashes during slide transitions
+  backgroundImages.forEach((src) => {
+    preload(src, { as: "image" });
+  });
+
   return (
     <main className="w-full bg-black">
       <PresentationProvider>
