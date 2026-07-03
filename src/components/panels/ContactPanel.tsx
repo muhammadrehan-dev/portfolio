@@ -16,7 +16,7 @@ export function ContactPanel() {
   ];
 
   return (
-    <Panel id="contact" index={6} bgImage="/media/contact-bg.jpg">
+    <Panel id="contact" index={6} bgImage="/media/contact-bg.jpg" bgPosition="bg-left md:bg-center">
       <div className="max-w-4xl flex flex-col h-full justify-center">
         <motion.h2 
           initial={{ opacity: 0, y: 30 }}

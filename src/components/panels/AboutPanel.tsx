@@ -31,33 +31,43 @@ export function AboutPanel() {
           Also known in the developer and security community by my alias, <strong className="text-white">CH4 Ezio</strong>.
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
-          {[
-            {
-              title: "Web Development",
-              desc: "WordPress, custom HTML/CSS/JS, React, WooCommerce, clean fast mobile-first builds.",
-            },
-            {
-              title: "Cybersecurity",
-              desc: "VAPT, bug bounty hunting, IDOR exploitation, OS hardening, basic networking.",
-            },
-            {
-              title: "Tools & Other",
-              desc: "Canva, FTP/hosting management, SEO/Analytics, cPanel, Vercel/Netlify, WhatsApp API integrations.",
-            }
-          ].map((item, i) => (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 + i * 0.1 }}
-              viewport={{ once: true }}
-              className="p-4 md:p-6 border border-white/20 bg-black/40"
-            >
-              <h3 className="text-base md:text-xl font-bold mb-2 md:mb-3">{item.title}</h3>
-              <p className="text-white/60 text-xs md:text-sm leading-relaxed">{item.desc}</p>
-            </motion.div>
-          ))}
+        <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] -mx-5 px-5 md:mx-0 md:px-0">
+          <div className="animate-marquee gap-4 md:gap-8">
+            {[
+              {
+                title: "Web Development",
+                desc: "WordPress, custom HTML/CSS/JS, React, WooCommerce, clean fast mobile-first builds.",
+              },
+              {
+                title: "Cybersecurity",
+                desc: "VAPT, bug bounty hunting, IDOR exploitation, OS hardening, basic networking.",
+              },
+              {
+                title: "Tools & Other",
+                desc: "Canva, FTP/hosting management, SEO/Analytics, cPanel, Vercel/Netlify, WhatsApp API integrations.",
+              },
+              {
+                title: "Web Development",
+                desc: "WordPress, custom HTML/CSS/JS, React, WooCommerce, clean fast mobile-first builds.",
+              },
+              {
+                title: "Cybersecurity",
+                desc: "VAPT, bug bounty hunting, IDOR exploitation, OS hardening, basic networking.",
+              },
+              {
+                title: "Tools & Other",
+                desc: "Canva, FTP/hosting management, SEO/Analytics, cPanel, Vercel/Netlify, WhatsApp API integrations.",
+              }
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="w-[280px] md:w-[320px] shrink-0 p-4 md:p-6 border border-white/20 bg-black/40"
+              >
+                <h3 className="text-base md:text-xl font-bold mb-2 md:mb-3">{item.title}</h3>
+                <p className="text-white/60 text-xs md:text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </Panel>

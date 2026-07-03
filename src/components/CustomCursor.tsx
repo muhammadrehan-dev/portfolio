@@ -7,8 +7,13 @@ export function CustomCursor() {
   const [mousePosition, setMousePosition] = useState({ x: -100, y: -100 });
   const [isHovering, setIsHovering] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
+    if (window.matchMedia("(pointer: coarse)").matches) {
+      setIsTouchDevice(true);
+      return;
+    }
     const updateMousePosition = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
       if (!isVisible) setIsVisible(true);
@@ -45,6 +50,8 @@ export function CustomCursor() {
       document.removeEventListener("mouseenter", handleMouseEnter);
     };
   }, [isVisible]);
+
+  if (isTouchDevice) return null;
 
   return (
     <>

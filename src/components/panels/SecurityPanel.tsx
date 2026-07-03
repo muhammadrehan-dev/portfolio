@@ -37,21 +37,19 @@ export function SecurityPanel() {
           <span className="text-white/50">SECURING SYSTEMS.</span>
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
-          {highlights.map((h, i) => (
-            <motion.div
-              key={h.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 + i * 0.15 }}
-              viewport={{ once: true }}
-              className="p-5 md:p-8 border-l border-white/20"
-            >
-              {h.icon}
-              <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4">{h.title}</h3>
-              <p className="text-white/70 leading-relaxed text-xs md:text-base">{h.desc}</p>
-            </motion.div>
-          ))}
+        <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] -mx-5 px-5 md:mx-0 md:px-0 mt-8 md:mt-16">
+          <div className="animate-marquee gap-4 md:gap-8">
+            {[...highlights, ...highlights].map((h, i) => (
+              <div
+                key={i}
+                className="w-[300px] md:w-[400px] shrink-0 p-5 md:p-8 border-l border-white/20 bg-black/40"
+              >
+                {h.icon}
+                <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4">{h.title}</h3>
+                <p className="text-white/70 leading-relaxed text-xs md:text-base">{h.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </Panel>

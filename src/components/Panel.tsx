@@ -8,6 +8,7 @@ interface PanelProps {
   id: string;
   index: number;
   bgImage?: string;
+  bgPosition?: string;
   children: React.ReactNode;
 }
 
@@ -29,7 +30,7 @@ const slideVariants = {
   }),
 };
 
-export function Panel({ id, index, bgImage, children }: PanelProps) {
+export function Panel({ id, index, bgImage, bgPosition, children }: PanelProps) {
   const { activeIndex, direction } = usePresentationContext();
   const isActive = index === activeIndex;
 
@@ -50,12 +51,12 @@ export function Panel({ id, index, bgImage, children }: PanelProps) {
             x: { type: "tween", duration: 0.9, ease: [0.4, 0, 0.2, 1] },
           }}
           id={id}
-          className="absolute inset-0 flex items-center overflow-hidden"
+          className="absolute inset-0 flex overflow-hidden"
         >
           {/* Background with grayscale and overlay */}
           {bgImage && (
             <div
-              className="absolute inset-0 z-0 bg-cover bg-center grayscale"
+              className={cn("absolute inset-0 z-0 bg-cover grayscale", bgPosition || "bg-center")}
               style={{ backgroundImage: `url(${bgImage})` }}
             />
           )}
@@ -64,8 +65,8 @@ export function Panel({ id, index, bgImage, children }: PanelProps) {
           <div className="absolute inset-0 z-0 bg-black/60" />
 
           {/* Content wrapper */}
-          <div className="relative z-10 w-full h-full px-5 pt-16 pb-24 md:px-24 md:pt-0 md:pb-0 flex items-center overflow-y-auto md:overflow-visible">
-            <div className="w-full max-w-7xl mx-auto">
+          <div className="relative z-10 w-full h-full px-5 pt-16 pb-20 md:px-24 md:py-0 flex flex-col overflow-y-auto">
+            <div className="w-full max-w-7xl mx-auto my-auto shrink-0 py-8 md:py-0">
               {children}
             </div>
           </div>

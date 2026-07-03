@@ -4,16 +4,7 @@ import { motion } from "framer-motion";
 import { Panel } from "../Panel";
 
 export function SkillsPanel() {
-  const skillCategories = [
-    {
-      title: "Web & Backend",
-      skills: ["Next.js", "Node.js", "React", "Flutter/Dart", ".NET", "Java", "SQL (MySQL/SQLite)", "Firebase / Supabase", "FTP server-side setups", "WordPress / WooCommerce"]
-    },
-    {
-      title: "Security Skills",
-      skills: ["VAPT", "Bug Bounty", "IDOR", "Linux", "Networking", "Recon"]
-    }
-  ];
+
 
   return (
     <Panel id="skills" index={3} bgImage="/media/skills-bg.jpg">
@@ -28,32 +19,34 @@ export function SkillsPanel() {
           SKILLS & EXPERTISE
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
-          {skillCategories.map((cat, i) => (
-            <motion.div
-              key={cat.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: i * 0.2 }}
-              viewport={{ once: true }}
-            >
-              <h3 className="text-lg md:text-2xl font-bold mb-3 md:mb-6 pb-2 md:pb-4 border-b border-white/20 uppercase tracking-widest">{cat.title}</h3>
-              <ul className="space-y-2 md:space-y-4">
-                {cat.skills.map((skill, j) => (
-                  <motion.li 
-                    key={skill}
-                    initial={{ opacity: 0, x: -10 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.3, delay: (i * 0.2) + (j * 0.05) }}
-                    viewport={{ once: true }}
-                    className="flex items-center text-white/70 text-sm md:text-base before:content-[''] before:w-1.5 before:h-1.5 before:bg-white before:mr-3"
-                  >
-                    {skill}
-                  </motion.li>
-                ))}
-              </ul>
-            </motion.div>
-          ))}
+        <div className="flex flex-wrap justify-center items-center gap-3 md:gap-6 mt-6 md:mt-10">
+          {[
+            "Next.js", "Node.js", "React", "Flutter", "Dart", ".NET", "Java",
+            "SQL", "Firebase", "Supabase", "FTP", "WordPress", "WooCommerce",
+            "VAPT", "Bug Bounty", "IDOR", "Linux", "Networking", "Recon"
+          ].map((skill, i) => {
+            const rotation = (i % 2 === 0 ? 1 : -1) * (i % 4) * 3;
+            return (
+              <motion.div
+                key={skill}
+                initial={{ opacity: 0, scale: 0.5, rotate: rotation }}
+                whileInView={{ opacity: 1, scale: 1, rotate: rotation }}
+                whileHover={{ scale: 1.25, rotate: 0, zIndex: 20, color: "#ffffff" }}
+                whileTap={{ scale: 1.25, rotate: 0, zIndex: 20, color: "#ffffff" }}
+                transition={{ 
+                  duration: 0.4, 
+                  delay: i * 0.05,
+                  scale: { type: "spring", stiffness: 400, damping: 20 }
+                }}
+                className="text-white/40 text-lg sm:text-2xl md:text-4xl lg:text-5xl font-black cursor-pointer uppercase tracking-wider transition-colors"
+                style={{
+                  transformOrigin: "center"
+                }}
+              >
+                {skill}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </Panel>
