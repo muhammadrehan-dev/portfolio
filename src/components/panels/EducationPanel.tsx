@@ -6,7 +6,7 @@ import { Panel } from "../Panel";
 export function EducationPanel() {
   const education = [
     {
-      title: "BS Information Technology / Cybersecurity",
+      title: "BS Cyber Security",
       inst: "Dawood University of Engineering & Technology (DUET)",
       year: "2025–2029",
       details: "Currently pursuing a degree focused on network security, web application vulnerabilities, and modern software development. Blending academic theory with practical bug bounty hunting and real-world web development.",
@@ -21,7 +21,7 @@ export function EducationPanel() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-5xl lg:text-6xl font-black mb-8"
+          className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black mb-4 md:mb-8"
         >
           EDUCATION & CERTIFICATION
         </motion.h2>
@@ -36,11 +36,11 @@ export function EducationPanel() {
               viewport={{ once: true }}
               className="relative flex items-center group is-active"
             >
-              <div className="w-full p-8 bg-white/5 border border-white/10 rounded">
+              <div className="w-full p-5 md:p-8 bg-white/5 border border-white/10 rounded">
                 <div className="text-white/50 text-sm font-bold tracking-widest mb-3 uppercase">{item.year}</div>
-                <h3 className="text-3xl font-black mb-2">{item.title}</h3>
-                <p className="text-white font-bold text-xl mb-4">{item.inst}</p>
-                <p className="text-white/70 leading-relaxed max-w-2xl">{item.details}</p>
+                <h3 className="text-xl md:text-3xl font-black mb-2">{item.title}</h3>
+                <p className="text-white font-bold text-base md:text-xl mb-3 md:mb-4">{item.inst}</p>
+                <p className="text-white/70 leading-relaxed max-w-2xl text-sm md:text-base">{item.details}</p>
               </div>
             </motion.div>
           ))}

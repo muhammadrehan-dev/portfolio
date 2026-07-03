@@ -2,6 +2,7 @@ import { preload } from "react-dom";
 import { PresentationProvider } from "@/components/PresentationProvider";
 import { ProgressIndicator } from "@/components/ProgressIndicator";
 import { Navbar } from "@/components/Navbar";
+import { NavigationArrows } from "@/components/NavigationArrows";
 import { HeroPanel } from "@/components/panels/HeroPanel";
 import { AboutPanel } from "@/components/panels/AboutPanel";
 import { EducationPanel } from "@/components/panels/EducationPanel";
@@ -31,6 +32,7 @@ export default function Home() {
       <PresentationProvider>
         <Navbar />
         <ProgressIndicator />
+        <NavigationArrows />
         <HeroPanel />
         <AboutPanel />
         <EducationPanel />

@@ -64,7 +64,7 @@ export function Panel({ id, index, bgImage, children }: PanelProps) {
           <div className="absolute inset-0 z-0 bg-black/60" />
 
           {/* Content wrapper */}
-          <div className="relative z-10 w-full h-full px-8 md:px-24 flex items-center">
+          <div className="relative z-10 w-full h-full px-5 pt-16 pb-24 md:px-24 md:pt-0 md:pb-0 flex items-center overflow-y-auto md:overflow-visible">
             <div className="w-full max-w-7xl mx-auto">
               {children}
             </div>

@@ -6,10 +6,6 @@ import { Panel } from "../Panel";
 export function SkillsPanel() {
   const skillCategories = [
     {
-      title: "Computer Skills",
-      skills: ["MS Word/PowerPoint/Excel", "Internet Research", "Basic Programming"]
-    },
-    {
       title: "Web & Backend",
       skills: ["Next.js", "Node.js", "React", "Flutter/Dart", ".NET", "Java", "SQL (MySQL/SQLite)", "Firebase / Supabase", "FTP server-side setups", "WordPress / WooCommerce"]
     },
@@ -27,12 +23,12 @@ export function SkillsPanel() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-5xl md:text-7xl font-black mb-16"
+          className="text-3xl sm:text-5xl md:text-7xl font-black mb-8 md:mb-16"
         >
           SKILLS & EXPERTISE
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
           {skillCategories.map((cat, i) => (
             <motion.div
               key={cat.title}
@@ -41,8 +37,8 @@ export function SkillsPanel() {
               transition={{ duration: 0.6, delay: i * 0.2 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-bold mb-6 pb-4 border-b border-white/20 uppercase tracking-widest">{cat.title}</h3>
-              <ul className="space-y-4">
+              <h3 className="text-lg md:text-2xl font-bold mb-3 md:mb-6 pb-2 md:pb-4 border-b border-white/20 uppercase tracking-widest">{cat.title}</h3>
+              <ul className="space-y-2 md:space-y-4">
                 {cat.skills.map((skill, j) => (
                   <motion.li 
                     key={skill}
@@ -50,7 +46,7 @@ export function SkillsPanel() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: (i * 0.2) + (j * 0.05) }}
                     viewport={{ once: true }}
-                    className="flex items-center text-white/70 before:content-[''] before:w-1.5 before:h-1.5 before:bg-white before:mr-3"
+                    className="flex items-center text-white/70 text-sm md:text-base before:content-[''] before:w-1.5 before:h-1.5 before:bg-white before:mr-3"
                   >
                     {skill}
                   </motion.li>

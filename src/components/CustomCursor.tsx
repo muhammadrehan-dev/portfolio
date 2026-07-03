@@ -46,11 +46,6 @@ export function CustomCursor() {
     };
   }, [isVisible]);
 
-  // Hide on touch devices
-  if (typeof window !== "undefined" && window.matchMedia("(hover: none)").matches) {
-    return null;
-  }
-
   return (
     <>
       {/* Small dot that perfectly tracks cursor */}

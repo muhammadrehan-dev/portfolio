@@ -31,7 +31,9 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
-/* Hide native cursor to use custom JS cursor */
-* {
-  cursor: none !important;
+/* Hide native cursor to use custom JS cursor — only on hover-capable devices */
+@media (hover: hover) {
+  * {
+    cursor: none !important;
+  }
 }
