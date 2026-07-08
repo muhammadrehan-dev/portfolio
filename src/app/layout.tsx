@@ -3,7 +3,8 @@ import { Caveat } from "next/font/google";
 import "./globals.css";
 import { PersistentBadge } from "@/components/PersistentBadge";
 import { CustomCursor } from "@/components/CustomCursor";
-
+import { AnalyticsProvider } from "@/components/AnalyticsProvider";
+import { CookieBanner } from "@/components/CookieBanner";
 const caveat = Caveat({
   variable: "--font-caveat",
   subsets: ["latin"],
@@ -44,9 +45,12 @@ export default function RootLayout({
       className={`${caveat.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-black text-white selection:bg-white selection:text-black overflow-hidden">
-        <CustomCursor />
-        <PersistentBadge />
-        {children}
+        <AnalyticsProvider>
+          <CustomCursor />
+          <PersistentBadge />
+          {children}
+          <CookieBanner />
+        </AnalyticsProvider>
       </body>
     </html>
   );
