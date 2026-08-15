@@ -139,7 +139,7 @@ export function IosGreetingsSplash() {
                       willChange: "clip-path, opacity",
                       transform: "translateZ(0)",
                     }}
-                    className={`text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white leading-[1.35] tracking-tight ${currentGreeting.fontClass} drop-shadow-2xl px-4 py-4 inline-block whitespace-nowrap text-nowrap`}
+                    className={`text-7xl sm:text-8xl md:text-9xl lg:text-[11rem] text-white leading-[1.35] tracking-tight ${currentGreeting.fontClass} drop-shadow-2xl px-2 py-2 inline-block whitespace-nowrap text-nowrap`}
                   >
                     {currentGreeting.text}
                   </motion.h1>
