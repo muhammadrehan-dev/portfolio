@@ -1,12 +1,26 @@
 import type { Metadata } from "next";
-import { Caveat } from "next/font/google";
+import { Caveat, Sacramento, Great_Vibes } from "next/font/google";
 import "./globals.css";
 import { PersistentBadge } from "@/components/PersistentBadge";
 import { CustomCursor } from "@/components/CustomCursor";
 import { AnalyticsProvider } from "@/components/AnalyticsProvider";
 import { CookieBanner } from "@/components/CookieBanner";
+import { IosGreetingsSplash } from "@/components/IosGreetingsSplash";
+
 const caveat = Caveat({
   variable: "--font-caveat",
+  subsets: ["latin"],
+});
+
+const sacramento = Sacramento({
+  weight: "400",
+  variable: "--font-sacramento",
+  subsets: ["latin"],
+});
+
+const greatVibes = Great_Vibes({
+  weight: "400",
+  variable: "--font-great-vibes",
   subsets: ["latin"],
 });
 
@@ -42,10 +56,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${caveat.variable} h-full antialiased`}
+      className={`${caveat.variable} ${sacramento.variable} ${greatVibes.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full bg-black text-white selection:bg-white selection:text-black overflow-hidden">
+      <body
+        className="min-h-full bg-black text-white selection:bg-white selection:text-black overflow-hidden"
+        suppressHydrationWarning
+      >
         <AnalyticsProvider>
+          <IosGreetingsSplash />
           <CustomCursor />
           <PersistentBadge />
           {children}
