@@ -50,6 +50,9 @@ export function ContactPanel() {
             <a
               key={link.name}
               href={link.href}
+              target={link.href.startsWith("http") ? "_blank" : undefined}
+              rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+              aria-label={`Contact Muhammad Rehan via ${link.name}`}
               className="relative overflow-hidden group border border-white/20 px-4 py-3 md:px-6 md:py-4"
             >
               <span className="absolute inset-0 bg-white origin-right scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100" />

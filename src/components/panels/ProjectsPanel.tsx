@@ -181,6 +181,8 @@ export function ProjectsPanel() {
           <a
             href="https://github.com/muhammadrehan-dev"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile of Muhammad Rehan"
             className="text-white hover:underline"
           >
             GitHub
@@ -189,6 +191,8 @@ export function ProjectsPanel() {
           <a
             href="https://7expertspk.com"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="7 Experts PK website"
             className="text-white hover:underline"
           >
             7ExpertsPK.com

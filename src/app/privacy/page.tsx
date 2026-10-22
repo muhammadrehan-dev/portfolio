@@ -1,7 +1,21 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Privacy policy and telemetry protocols for muhammadrehan-dev.me.",
+  alternates: {
+    canonical: "/privacy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function PrivacyPolicy() {
   return (
-    <div className="h-screen w-full flex items-center justify-center p-4 bg-black font-mono overflow-hidden">
-      <div className="max-w-6xl w-full border border-white/20 p-6 shadow-[0_0_15px_rgba(255,255,255,0.1)] bg-white/5">
+    <main className="h-screen w-full flex items-center justify-center p-4 bg-black font-mono overflow-hidden">
+      <article className="max-w-6xl w-full border border-white/20 p-6 shadow-[0_0_15px_rgba(255,255,255,0.1)] bg-white/5">
         <h1 className="text-2xl font-bold mb-4 uppercase tracking-widest border-b border-white/20 pb-2 text-center text-white">System Privacy Protocol</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-300 text-xs leading-relaxed">
@@ -40,7 +54,7 @@ export default function PrivacyPolicy() {
             </p>
           </section>
         </div>
-      </div>
-    </div>
+      </article>
+    </main>
   );
 }

@@ -28,7 +28,7 @@ export function AnalyticsProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   useEffect(() => {
-    if (!consentGranted || pathname?.startsWith('/admin')) return;
+    if (!consentGranted) return;
 
     // 1. Setup session tracking
     let sessionId = sessionStorage.getItem('analytics_session_id');
@@ -71,7 +71,7 @@ export function AnalyticsProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     // 2. Setup page view tracking
-    if (!consentGranted || !sessionIdRef.current || !pathname || pathname.startsWith('/admin')) return;
+    if (!consentGranted || !sessionIdRef.current || !pathname) return;
 
     let intervalId: NodeJS.Timeout;
     
