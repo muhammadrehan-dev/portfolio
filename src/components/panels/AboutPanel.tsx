@@ -27,9 +27,29 @@ export function AboutPanel() {
         >
           Cyber Security student at Dawood University of Engineering and Technology (DUET), Karachi. 
           Blending web development with a security mindset to build and protect digital products. 
-          <br /><br />
           Also known in the developer and security community by my alias, <strong className="text-white">CH4 Ezio</strong>.
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="mb-8 md:mb-12"
+        >
+          <a
+            href="https://blog.muhammadrehan-dev.me"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Read more articles on Muhammad Rehan's Blog"
+            className="inline-flex items-center gap-2 group border border-white/20 bg-black/40 hover:bg-white hover:text-black px-4 py-2.5 md:px-5 md:py-3 transition-colors duration-300 text-xs md:text-sm font-bold tracking-widest uppercase"
+          >
+            <span>Read more at my Blog</span>
+            <span className="transform transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5">
+              ↗
+            </span>
+          </a>
+        </motion.div>
 
         <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] -mx-5 px-5 md:mx-0 md:px-0">
           <div className="animate-marquee gap-4 md:gap-8">
